@@ -25,7 +25,6 @@ class StoreBook {
   removeBook(bookid) {
     const rmvbook = document.getElementById(bookid);
     rmvbook.remove();
-    //localStorage.removeItem(bookid);
     this.BookData = this.BookData.filter((x) => x.bookid !== bookid);
     localStorage.setItem('BookDB', JSON.stringify(this.BookData));
   }
