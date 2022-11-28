@@ -25,8 +25,9 @@ class StoreBook {
   removeBook(bookid) {
     const rmvbook = document.getElementById(bookid);
     rmvbook.remove();
+    //localStorage.removeItem(bookid);
     this.BookData = this.BookData.filter((x) => x.bookid !== bookid);
-    localStorage.setItem('BookDB', JSON.stringify(this.BookDB));
+    localStorage.setItem('BookDB', JSON.stringify(this.BookData));
   }
 }
 
@@ -45,10 +46,7 @@ function DisplayBooks(index) {
   const displaybook = document.createElement('div');
   displaybook.classList.add('book-item');
   displaybook.setAttribute('id', index.bookid);
-  displaybook.innerHTML = `
-  <p>${index.title}<p>
-  <p>${index.author}</p>
-  `;
+  displaybook.innerHTML = `<p>${index.title} <br/> ${index.author}</p>`;
   const removeBook = document.createElement('button');
   removeBook.innerHTML = 'Remove';
   removeBook.addEventListener('click', () => savebook.removeBook(index.bookid));
