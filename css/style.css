@@ -2,3 +2,84 @@
   margin: 0;
   padding: 0;
 }
+
+.section-list {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.all-book h1,h2 {
+  font-size: 30px;
+  font-weight: 400;
+  color: blue;
+  margin: 30px;
+}
+
+.awesome-book-list {
+  display: block;
+  flex-direction: row;
+  justify-content: baseline;
+  margin: 20px;
+}
+
+.book-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0 10px 30px;
+}
+
+.book-item button{
+  background-color: brown;
+  float: right;
+  margin:0 10px 0 50px;
+  padding: 2px;
+  color: white;
+  border: 0;
+}
+
+.book-item button:hover{
+  background-color: blue;
+  float: right;
+  margin:0 10px 0 50px;
+  padding: 2px;
+  color: yellow;
+}
+
+.light {
+  background-color: rgb(244, 236, 237);
+}
+
+.white {
+  background-color: lightgrey;
+}
+
+.addbook {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#title, #author {
+  padding: 10px;
+  border: 1px solid;
+  color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+}
+
+#add-btn {
+  width: 60px;
+  height: 40px;
+  float: right;
+  margin-left: 80%;
+  color: #fff;
+  background-color: brown;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: blue;
+}
+
