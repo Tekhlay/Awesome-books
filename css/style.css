@@ -11,7 +11,14 @@
   margin: 0 auto;
 }
 
-.all-book h1,h2 {
+.all-book h1 {
+  font-size: 30px;
+  font-weight: 400;
+  color: blue;
+  margin: 30px;
+}
+
+.new-books h2 {
   font-size: 30px;
   font-weight: 400;
   color: blue;
@@ -33,7 +40,7 @@
   padding: 10px 0 10px 30px;
 }
 
-.book-item button{
+.book-item button {
   background-color: brown;
   float: right;
   margin:0 10px 0 50px;
@@ -57,11 +64,19 @@
 .error {
   color: white;
   background-color: red;
+  padding: 10px;
+  text-align: center;
+  margin: 3px 0;
+  border-radius: 10px;
 }
 
 .success {
+  padding: 10px;
   color: white;
+  text-align: center;
+  border-radius: 10px;
   background-color: green;
+  margin: 3px 0;
 }
 
 .white {
@@ -73,6 +88,7 @@
   flex-direction: column;
   gap: 20px;
 }
+
 #title, #author {
   padding: 10px;
   border: 1px solid;
@@ -93,3 +109,10 @@
   box-shadow: blue;
 }
 
+.remove-book {
+  background-color: yellowgreen;
+  color: #fff;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: center;
+}
