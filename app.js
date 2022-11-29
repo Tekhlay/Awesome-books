@@ -41,18 +41,22 @@ function getformInput() {
 
 // Display teh list of books on the web page
 function DisplayBooks(index) {
+  let bgcolor = '';
+  if (savebook.BookData.indexOf(index) % 2 !== 0) {
+    bgcolor = 'white';
+  } else {
+    bgcolor = 'light';
+  }
   const listOfbooks = document.querySelector('.awesome-book-list');
   const displaybook = document.createElement('div');
   displaybook.classList.add('book-item');
+  displaybook.classList.add(bgcolor);
   displaybook.setAttribute('id', index.bookid);
-  displaybook.innerHTML = `<p>${index.title} <br/> ${index.author}</p>`;
+  displaybook.innerHTML = `<p>${index.title} by ${index.author}</p>`;
   const removeBook = document.createElement('button');
   removeBook.innerHTML = 'Remove';
   removeBook.addEventListener('click', () => savebook.removeBook(index.bookid));
   displaybook.appendChild(removeBook);
-  const hr = document.createElement('h1');
-  hr.innerHTML = '<hr/>';
-  displaybook.appendChild(hr);
   listOfbooks.appendChild(displaybook);
 }
 
