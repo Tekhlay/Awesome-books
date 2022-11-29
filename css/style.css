@@ -28,7 +28,7 @@
 .awesome-book-list {
   display: block;
   flex-direction: row;
-  justify-content: baseline;
+  justify-content: center;
   margin: 20px;
 }
 
@@ -43,17 +43,17 @@
 .book-item button {
   background-color: brown;
   float: right;
-  margin:0 10px 0 50px;
-  padding: 2px;
+  margin: 0 10px 0 50px;
+  padding: 5px;
   color: white;
   border: 0;
 }
 
-.book-item button:hover{
+.book-item button:hover {
   background-color: blue;
   float: right;
-  margin:0 10px 0 50px;
-  padding: 2px;
+  margin: 0 10px 0 50px;
+  padding: 5px;
   color: yellow;
 }
 
@@ -89,7 +89,8 @@
   gap: 20px;
 }
 
-#title, #author {
+#title,
+#author {
   padding: 10px;
   border: 1px solid;
   color: black;
@@ -106,7 +107,6 @@
   background-color: brown;
   border: 0;
   border-radius: 10px;
-  box-shadow: blue;
 }
 
 .remove-book {
