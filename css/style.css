@@ -54,6 +54,16 @@
   background-color: rgb(244, 236, 237);
 }
 
+.error {
+  color: white;
+  background-color: red;
+}
+
+.success {
+  color: white;
+  background-color: green;
+}
+
 .white {
   background-color: lightgrey;
 }

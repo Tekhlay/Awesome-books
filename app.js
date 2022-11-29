@@ -85,3 +85,37 @@ window.onload = () => {
   }
   savebook.BookData.forEach((item) => DisplayBooks(item));
 };
+
+
+const sectionList = document.querySelector('.section-list');
+
+const title = document.querySelector('#title');
+const author = document.querySelector('#author');
+
+sectionList.addEventListener('submit', () => {
+    showAlert()
+
+   
+});
+
+function showAlert() {
+    if(title.value == '' || author.value == ''){
+        const div = document.createElement('div');
+        div.className = `error`;
+        div.appendChild(document.createTextNode('field is required'));
+        const sectionList = document.querySelector('.section-list');
+        sectionList.appendChild(div);
+
+        setTimeout(() => document.querySelector('.error').remove(), 3000);
+
+    } else {
+        const div = document.createElement('div');
+        div.className = `success`;
+        div.appendChild(document.createTextNode('successfully added'));
+        const sectionList = document.querySelector('.section-list');
+        sectionList.appendChild(div);
+
+        setTimeout(() => document.querySelector('.success').remove(), 3000);
+ 
+    }
+}
