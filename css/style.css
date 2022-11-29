@@ -2,3 +2,117 @@
   margin: 0;
   padding: 0;
 }
+
+.section-list {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.all-book h1 {
+  font-size: 30px;
+  font-weight: 400;
+  color: blue;
+  margin: 30px;
+}
+
+.new-books h2 {
+  font-size: 30px;
+  font-weight: 400;
+  color: blue;
+  margin: 30px;
+}
+
+.awesome-book-list {
+  display: block;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px;
+}
+
+.book-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0 10px 30px;
+}
+
+.book-item button {
+  background-color: brown;
+  float: right;
+  margin: 0 10px 0 50px;
+  padding: 5px;
+  color: white;
+  border: 0;
+}
+
+.book-item button:hover {
+  background-color: blue;
+  float: right;
+  margin: 0 10px 0 50px;
+  padding: 5px;
+  color: yellow;
+}
+
+.light {
+  background-color: rgb(244, 236, 237);
+}
+
+.error {
+  color: white;
+  background-color: red;
+  padding: 10px;
+  text-align: center;
+  margin: 3px 0;
+  border-radius: 10px;
+}
+
+.success {
+  padding: 10px;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  background-color: green;
+  margin: 3px 0;
+}
+
+.white {
+  background-color: lightgrey;
+}
+
+.addbook {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#title,
+#author {
+  padding: 10px;
+  border: 1px solid;
+  color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+}
+
+#add-btn {
+  width: 60px;
+  height: 40px;
+  float: right;
+  margin-left: 80%;
+  color: #fff;
+  background-color: brown;
+  border: 0;
+  border-radius: 10px;
+}
+
+.remove-book {
+  background-color: yellowgreen;
+  color: #fff;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: center;
+}
