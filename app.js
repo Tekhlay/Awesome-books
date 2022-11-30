@@ -125,7 +125,7 @@ listlink.addEventListener('click', () => {
   addlink.style.color = 'black';
   add.style.display = 'none';
   contact.style.display = 'none';
-})
+});
 
 addlink.addEventListener('click', () => {
   add.style.display = 'block';
@@ -134,7 +134,7 @@ addlink.addEventListener('click', () => {
   listlink.style.color = 'black';
   contactlink.style.color = 'black';
   addlink.style.color = 'blue';
-})
+});
 
 contactlink.addEventListener('click', () => {
   contact.style.display = 'block';
@@ -143,4 +143,7 @@ contactlink.addEventListener('click', () => {
   listlink.style.color = 'black';
   contactlink.style.color = 'blue';
   addlink.style.color = 'black';
-})
+});
+
+const date = new Date().toLocaleString();
+document.querySelector('.date').innerHTML = date;
