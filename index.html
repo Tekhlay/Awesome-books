@@ -9,22 +9,42 @@
 </head>
 <body>
     <header class="header-main">
+        <nav class="nav-bar">
+            <div class="logo">Awesome Books</div>
+            <ul class="nav-list">
+                <li><a class="list-link" href="#">List</a></li>
+                <li class="border"><a class="add-link" href="#">Add new</a></li>
+                <li><a class="contact-link" href="#">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main class="section-list">
-        <div class="all-book">
-            <h1 >All Awesome Books</h1>
-        </div>
-        <article class="awesome-book-list">
-        </article>
-        <form action="#" class="addbook" id="addbook">
-            <div class="new-books">
-                <h2>Add a new Book</h2>
+        <section class="book-list">
+            <div class="all-book">
+                <h1 >All Awesome Books</h1>
             </div>
-            <input id="title" type="text" placeholder="Title">
-            <input id="author" type="text" placeholder="Author">
-            <input class="alert" id="add-btn" type="submit" value="Add">
-        </form>
+            <article class="awesome-book-list">
+            </article>
+        </section>
+        <section class="addnewbook">
+            <form action="#" class="addbook" id="addbook">
+                <div class="new-books">
+                    <h2>Add a new Book</h2>
+                </div>
+                <input id="title" type="text" placeholder="Title">
+                <input id="author" type="text" placeholder="Author">
+                <input class="alert" id="add-btn" type="submit" value="Add">
+            </form>
+        </section>
+        <section class="contact">
+
+        </section>
     </main>
+    <footer class="footer-main">
+        <div class="footer-logo">
+            Copyright 2022, Tekhlay, George and Emuka
+        </div>
+    </footer>
     <script src="app.js"></script>
 </body>
 </html>
