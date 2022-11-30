@@ -3,6 +3,48 @@
   padding: 0;
 }
 
+.nav-bar {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.border {
+  border-left: 2px solid green;
+  border-right: 2px solid green;
+}
+
+.nav-list a {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-list a:hover {
+  cursor: pointer;
+  opacity: 0.9;
+} 
+
+.addnewbook {
+  display: none;
+}
+
 .section-list {
   width: 90%;
   display: flex;
