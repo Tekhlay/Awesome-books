@@ -67,7 +67,7 @@ const author = document.querySelector('#author');
 // Add Button
 const addnewBook = document.getElementById('add-btn');
 addnewBook.addEventListener('click', () => {
-  if (title.value === '' && author.value === '') {
+  if (title.value === '' || author.value === '') {
     showAlert();
   } else {
     const item = getformInput();

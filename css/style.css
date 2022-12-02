@@ -187,10 +187,13 @@
 }
 
 .footer-main {
+  position: absolute;
+  bottom: 0;
   width: 90%;
   margin: 0 auto;
 }
 
 .footer-logo {
-  margin-top: 50px;
+  margin: 20px;
+  font-size: 20px;
 }
