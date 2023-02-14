@@ -35,15 +35,15 @@ class StoreBook {
 
 const savebook = new StoreBook();
 // Get input value
-function getformInput() {
+const getformInput = () => {
   const title = document.querySelector('#title');
   const author = document.querySelector('#author');
   const insertbook = new Book(title.value, author.value);
   return insertbook;
-}
+};
 
 // Display teh list of books on the web page
-function DisplayBooks(index) {
+const DisplayBooks = (index) => {
   let bgcolor = '';
   if (savebook.BookData.indexOf(index) % 2 !== 0) {
     bgcolor = 'white';
@@ -60,14 +60,14 @@ function DisplayBooks(index) {
   removeBook.addEventListener('click', () => savebook.removeBook(index.bookid));
   displaybook.appendChild(removeBook);
   listOfbooks.appendChild(displaybook);
-}
+};
 
 const title = document.querySelector('#title');
 const author = document.querySelector('#author');
 // Add Button
 const addnewBook = document.getElementById('add-btn');
 addnewBook.addEventListener('click', () => {
-  if (title.value === '' || author.value === '') {
+  if (!title.value || !author.value) {
     showAlert();
   } else {
     const item = getformInput();
@@ -85,31 +85,33 @@ window.onload = () => {
   savebook.BookData.forEach((item) => DisplayBooks(item));
 };
 
-function showAlert() {
+const showAlert = () => {
   const div = document.createElement('div');
   div.className = 'error';
   div.appendChild(document.createTextNode('fields are required'));
   const newB = document.querySelector('.new-books');
   newB.appendChild(div);
-  setTimeout(() => document.querySelector('.error').remove(), 3000);
-}
+  setTimeout(() => {
+    document.querySelector('.error').remove();
+  }, 2000);
+};
 
-function success() {
+const success = () => {
   const div = document.createElement('div');
   div.className = 'success';
   div.appendChild(document.createTextNode('Book successfully added!'));
   const newB = document.querySelector('.new-books');
   newB.appendChild(div);
   setTimeout(() => document.querySelector('.success').remove(), 3000);
-}
+};
 
-function removeSuccess() {
+const removeSuccess = () => {
   const div = document.createElement('div');
   div.className = 'remove-book';
   div.appendChild(document.createTextNode('Book Deleted Successfully!'));
   head.appendChild(div);
   setTimeout(() => document.querySelector('.remove-book').remove(), 3000);
-}
+};
 
 const list = document.querySelector('.book-list');
 const add = document.querySelector('.addnewbook');
